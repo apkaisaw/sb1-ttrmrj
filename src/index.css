@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-warm-100;
+  }
+}
+
+@layer components {
+  .web3-card {
+    @apply bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+  }
+
+  .web3-button {
+    @apply bg-warm-500 text-white font-medium py-2 px-4 rounded-md hover:bg-warm-600 transition-all duration-300 transform hover:scale-102;
+  }
+
+  .web3-input {
+    @apply bg-warm-100 border border-warm-300 rounded-md p-2 text-gray-800 placeholder-warm-400 focus:outline-none focus:ring-2 focus:ring-warm-500;
+  }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
